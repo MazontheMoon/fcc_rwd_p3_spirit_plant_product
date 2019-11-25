@@ -75,7 +75,7 @@
       <!--section 3 content - text & four subsections of text-->
       <p>Let’s start off simple with the easiest and most basic of them all....the simple selector.</p>
       <p>The style is applied to one or more elements based on the type of element, it’s class, or it's id. Simple eh!</p>
-      <!--subsection 3.1 - Simple Elements-->
+      <!--subsection 3.1 - Simple Element-->
       <article id="simple_element">
         <!--subsection 3.1 header-->
         <h3>Element Selector</h3>
@@ -112,15 +112,32 @@
         </p>
         <!--subsection 3.2 code example-->
         <div class="codebox">
-          <code></code>
+          <p class="code-header">html example:</p>
+          <code class="html-snippet">
+            <span class="code-comment">&lt;!--intro section--&gt;</span>
+            <br>
+            &lt;section&gt;&lt;p&gt;Do I have an outline?&lt;/p&gt;&lt;/section&gt;
+            <br>
+            &lt;section class="box-outline"&gt;&lt;p&gt;Or do I have an outline?&lt;/p&gt;&lt;/section&gt;
+          </code>
+          <p class="code-header">css example:</p>
+          <code class="css-snippet">
+            <span class="code-comment">/*Add a solid black border*/</span>
+            <br>
+            .box-outline { border: 2px solid black; }
+          </code>
           <!--subsection 3.2 code display-->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
-
+            <p id="simple_class_sandbox">Do I have an outline?
+              <br>
+              <span>Or do I have an outline?</span>
+            </p>
           </div>
+          <p>In this example each element with the class &quot;box-outline&quot; will have this style applied to it.</p>
         </div>
       </article>
-      <!--subsection 3.3 - Simple Class-->
+      <!--subsection 3.3 - Simple ID-->
       <article id="simple_id">
         <!--subsection 3.3 header-->
         <h3>ID Selector</h3>
@@ -129,14 +146,34 @@
         <p>This is different to class styling as multiple html elements can use the same class but only a single element can have an id (There can be only one!)</p>
         <!--subsection 3.3 code example-->
         <div class="codebox">
-          <code></code>
+          <p class="code-header">html example:</p>
+          <code class="html-snippet">
+            <span class="code-comment">&lt;!--intro section--&gt;</span>
+            <br>
+            &lt;div id="top-box"&gt;&lt;p&gt;Description...&lt;/p&gt;&lt;/div&gt;
+            <br>
+            <span class="code-comment">&lt;!--content section--&gt;</span>
+            <br>
+            &lt;div id="not-top-box"&gt;&lt;p&gt;Content...&lt;/p&gt;&lt;/div&gt;
+          </code>
+          <p class="code-header">css example:</p>
+          <code class="css-snippet">
+            <span class="code-comment">/*styling for first box in form*/</span>
+            <br>
+            #top-box { background-color: grey; border: 2px dashed black; }
+          </code>
           <!--subsection 3.3 code display-->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
+            <p id="simple_id_sandbox">Description...
+              <br>
+              <span>Content...</span>
+            </p>
           </div>
+          <p>In this example it is only the element with the id &quot;top-box&quot; that will have this style applied to it.</p>
         </div>
       </article>
-      <!--subsection 3.4 - Simple Class-->
+      <!--subsection 3.4 - Simple Universal-->
       <article id="simple_universal">
         <!--subsection 3.4 header-->
         <h3>Universal Selector</h3>
