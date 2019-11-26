@@ -37,7 +37,7 @@
         <a href="#pseudo_element">Pseudo Elements</a>
       </li>
       <li class="nav-link">
-        <a href="#combo_multiple">Combinators & Multiple Selectors</a>
+        <a href="#combo_multiple">Combinators &amp; Multiple Selectors</a>
       </li>
       <li class="nav-link">
         <a href="#best_practice">Best Practices</a>
@@ -178,16 +178,42 @@
         <!--subsection 3.4 header-->
         <h3>Universal Selector</h3>
         <!--subsection 3.4 intro text-->
-        <p>The simplest selector of all may be the universal selector</p>
+        <p>The most simple selector of them all may be the universal selector</p>
         <p>* is the universal selector and is rarely useful by itself but often used in combination with other selectors.
         </p>
         <!--subsection 3.4 code example-->
         <div class="codebox">
-          <code></code>
+          <p class="code-header">html example:</p>
+          <code class="html-snippet">
+            <span class="code-comment">&lt;!--my list--&gt;</span>
+              <br>
+              &lt;ul&gt;&lt;li&gt;Listy McListface&lt;/li&gt;&lt;li&gt;Listy McListyFace&lt;/li&gt;&lt;/ul&gt;
+          </code>  
+          <p class="code-header">css example:</p>
+          <code class="css-snippet">
+            <span class="code-comment">/*reset default margins*/</span>
+            <br>
+            ul *  {  margin: 0; padding: 0; border: 1px dashed grey; }
+          </code>
           <!--subsection 3.4 code display-->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
+            <div id="sandbox-universal-style">
+              <p>With style applied:</p>
+              <ul>
+                <li>Listy McListface</li>
+                <li>Listy McListyFace</li>
+              </ul>
+            </div>
+            <div id="sandbox-universal-nostyle">
+              <p>Without style applied:</p>
+              <ul>
+                <li>Listy McListface</li>
+                <li>Listy McListyFace</li>
+              </ul>
+            </div>
           </div>
+          <p class="hot-tip">I use this is when resetting any default padding and margin on the html page itself</p>
         </div>
       </article>
     </section>
@@ -219,7 +245,7 @@
     <section class="main-section" id="combo_multiple">
       <!--section 7 header-->
       <header>
-        <h2>Combinators & Multiple Selectors</h2>
+        <h2>Combinators &amp; Multiple Selectors</h2>
       </header>
       <!--section 7 content-->
     </section>
